@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/* ----------모바일 CSS ----------*/
+
+/*공통CSS*/
+#wrap{width: 100%; max-width: 1361px; margin: 0 auto;}
+main section .sec_tit{font: 400 1.5rem Montserrat-SemiBold;text-align: center;color: #4a649f;margin-bottom: 50px;}
+
+/* 헤더 영역 CSS */
+header{position: relative;height: 20px;}
+header .logo{margin:10px auto; text-align: center;}
+header .logo a{font: 900 1.731em Montserrat-Bold;color:#fc78a9;text-shadow: 1px 1px #999;}
+header .gnb{position: absolute;top: 70px;width: 100%;background:rgba(255,255,255,0.5);display: none;z-index: 10;}
+header .gnb li{border-bottom: 1px solid #fff;}
+header .gnb li a{display: block;padding: 10px 0 10px 5%;font-size: 14px;color: #886baa;font-family: Montserrat-SemiBold}
+header .menu-toggle-btn{float: right;width: 30px;margin-top: 4px;margin-right: 7px; cursor: pointer;position: absolute;top: 5px; right: 5px;}
+header .menu-toggle-btn span{display: block;width: 100%;height: 2px;background:#886baa;}
+header .menu-toggle-btn span:nth-child(2){margin: 5px 0;}
+header .indicator{visibility: hidden;}
+
+
+/* slider 영역 CSS - swiper*/
+main section:first-child .main_rolling_pc{display: none;}
+main section:first-child{margin-top: 50px;}
+main section .visual .swiper-container{max-width: 1920px;margin: 0 auto;position:relative;}
+main section .visual img{vertical-align: top;width: 100%;}
+ /* swiper 하단 버튼 디자인  */
+main section .visual .swiper-pagination{position: absolute;left: 0;bottom: 3%;z-index: 100;text-align: center;}
+main section .visual .swiper-pagination .swiper-pagination-bullet{width: 12px;height: 12px;background: #fff;opacity: 1;}
+main section .visual .swiper-pagination .swiper-pagination-bullet-active{ background: #886baa;}
+
+/* ABOUT ME 영역 CSS*/
+main section:nth-child(3){text-align: center;margin-top: 60px;margin-bottom: 60px;width: 50}
+main section:nth-child(3) .about1 img{width: 30%;}
+main section:nth-child(3) dt {margin-top: 20px;font: 600 1.2rem Montserrat-Regular;color: #4d8599;line-height: 1.5;}
+main section:nth-child(3) dd{margin-top: 5px;font-size: 13px;line-height: 1.5;color:#525252;display: block;}
+main section:nth-child(3) .about2 {width: 80%;margin: 0 auto;display: flex;flex-direction: column !important;}
+main section:nth-child(3) span{float: left;margin-right: 10px;margin-top: 0;}
+main section:nth-child(3) .about3{width: 90%;margin: 0 auto;display: flex;flex-flow: column nowrap;align-content: center;}
+main section:nth-child(3) .about3 dl{width: 80%; margin: 0 auto;}
+main section:nth-child(3) .about3 dd{text-align: left;margin-left: 25%;}
+
+/* SKILL ME 영역 CSS*/
+main section:nth-child(4){text-align: center;margin-top: 60px;width: 90%;margin: 0 auto;margin-bottom: 60px;}
+main section:nth-child(4) p{color:#525252;font-size:12px;}
+main section:nth-child(4) .Count:after{content:"%"}
+main section:nth-child(4) .skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+main section:nth-child(4) .skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+    width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#4a649f;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+main section:nth-child(4) .skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+main section:nth-child(4) .skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#f38593;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+main section:nth-child(4) .skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+/* WORK 영역 CSS*/
+main section:nth-child(5){text-align: center;margin: 60px auto;width: 100%;overflow: hidden;cursor: pointer;}
+main section:nth-child(5) img{display: block; width: 100%; height: auto; transition: 0.5s;}
+main section:nth-child(5) img:hover{transform: scale(1.2)}
+
+/* CONTACT US 영역 CSS*/
+main section:nth-child(6){width: 100%;background-color: #d5bdb5;padding:40px 0 70px 0;}
+main section:nth-child(6) h2{padding-top: 30px;}
+main section:nth-child(6) form{width:70%; margin:0 auto;}
+main section:nth-child(6) form>*{display:block; }
+main section:nth-child(6) input{width:90%; height:30px;margin:10px; padding-left:10px;border-radius:5px}
+main section:nth-child(6) textarea{width:87%; height:100px; border-radius:5px; margin:10px; padding:10px; ime-mode:active;}
+
+/* footer 영역 CSS*/
+footer{width: 100%;margin-top: 60px;text-align: center;margin-bottom: 30px;color: #4d8599;font-size: 14px;font-family: Montserrat-Regular;}
+footer ul{text-align: center;margin-bottom: 30px;}
+footer ul li{display: inline;padding: 0 30px;}
+
+
+/* ----------태블릿용 CSS---------- */
+@media all and (min-width:768px){
+	
+/*태블릿용 헤더 영역css*/
+header{position: static;padding: 28px 10px;}
+header .logo{float: left;margin-left: 0;}
+header .gnb{display: block !important;position: static; float: right;margin-top: 20px;width: auto;}
+header .gnb li{float: left;margin-left: 22px;border-bottom: 0;}
+header .gnb li a{padding: 0;font-size: 16px;}
+header .menu-toggle-btn{display: none !important;}	
+
+/*indicator*/	
+header .indicator{visibility: visible !important;}	
+header .indicator {margin-top: -75px;position: fixed;top: 50%;right: 10px;z-index: 20;}
+header .indicator > li {width: 15px;height: 15px;position: relative; margin-bottom: 12px;border-radius: 50%;background-color: #886baa;transform: scale(1);transition: all 0.5s ease 0s;}
+header .indicator > li:hover {background-color: #fff;transform: scale(1.5);}
+header .indicator > li > em {display: block;width: 100px;height: 20px;opacity: 0;text-align: right;font: 8px/1.5 Montserrat-Regular; color: #333;position: absolute;right: 20px;top: 0}
+header .indicator > li:hover em {opacity: 1;}
+	
+/* 태블릿용 ABOUT ME 영역 CSS*/
+main section:nth-child(3){margin-top: 100px;margin-bottom: 100px;}
+main section:nth-child(3) .about1 img {width: 20%;}	
+main section:nth-child(3) .about2{display: flex;flex-flow: row nowrap !important;justify-content: space-around;margin-top: 50px;width: 80%;}
+main section:nth-child(3) .about3{display: flex;flex-flow: row nowrap !important;justify-content: center;margin-top: 50px;width: 80%;}
+main section:nth-child(3) .about3 dl{width: 250px;margin-left: 5px;display: flex;flex-flow: column nowrap; align-items: center;}
+main section:nth-child(3) .about3 dd{margin-left: 9px;}
+
+	
+/* 태블릿용 SKILL 영역 CSS*/	
+main section:nth-child(4){text-align: center;margin-top: 60px;width: 50%;margin: 0 auto;margin-bottom: 60px;}
+
+	
+/* 태블릿용 WORK 영역 CSS*/
+main section:nth-child(5) img{width: 50%; float: left;}	
+	
+	
+/* 태블릿용 CONTACT 영역 CSS*/
+main section:nth-child(6){clear: both;}
+main section:nth-child(6) form{position: relative;width: 100%;}
+main section:nth-child(6) form > input{width: 45%;}
+main section:nth-child(6) form > textarea	{width:45%; height:90px; position:absolute; top:0; right:0; margin:0 20px;}
+main section:nth-child(6) input[type="submit"]{margin: 30px auto;width: 200px;}	
+	
+}
+
+
+
+
+/* ----------PC용 CSS---------- */
+@media all and (min-width:1132px){
+
+/* PC용 - slider 영역 CSS */
+main section:nth-child(2){display: none;}
+main section:first-child .main_rolling_pc{display: block;}
+	
+.visualRoll {position:relative; width:100%;}
+.viewImgList {position:relative; width:100%;}	
+.viewImgList li {text-align:center; height:567px; line-height:500px;}
+.viewImgList li.imglist0 {position:relative; z-index:50; background:url('../images/slide_img/slider01.png') no-repeat center;}
+.viewImgList li.imglist1 {position:absolute; width:100%; left:0; top:0; z-index:10; background:url('../images/slide_img/slider02.png') no-repeat center;}
+.viewImgList li.imglist2 {position:absolute; width:100%; left:0; top:0; z-index:10; background:url('../images/slide_img/slider03.png') no-repeat center;}
+.viewImgList li {background-size:cover !important;}
+.viewImgList li .roll_content {position:relative;}
+.viewImgList li .roll_content .roll_txtline {position:absolute; left:0; bottom:60px; width:100%; line-height:1; text-align:center; font-size:22px; color:#fff; letter-spacing:2px;}
+.rollbtnArea {position:absolute; width:100%; left:0; bottom:25px; z-index:200;}
+.rollbtnArea .rollingbtn {width:320px; margin:0 auto; text-align:center;}
+.rollbtnArea .rollingbtn li {display:inline-block; margin-right:5px;}
+.rollbtnArea .rollingbtn li.butt0 {margin-left:10px;}
+.rollbtnArea .rollingbtn li.rollstop {}
+.rollbtnArea .rollingbtn li.rollplay {display:none;}
+.rollbtnArea .rollingbtn li a {vertical-align:top;}
+
+/* PC용 - ABOUT ME 영역 CSS*/
+main section:nth-child(3){text-align: center;margin-top: 300px;margin-bottom: 60px;width: 50}
+main section:nth-child(3) .about1 img {width: 10%;}		
+		
+main section:nth-child(3) .about3{display: flex;flex-flow: row nowrap !important;justify-content: center;margin-top: 50px;width: 80%;}
+main section:nth-child(3) .about3 dl{width: 4000px;margin-left: 0;}	
+	
+/* PC용 - SKILL 영역 CSS*/	
+main section:nth-child(4){text-align: center;margin-top: 300px;width: 50%;margin: 0 auto;margin-bottom: 60px;}	
+	
+/* PC용 - WORK 영역 CSS*/	
+main section:nth-child(5){margin-top: 200px;}
+
+/* PC용 - CONTACT 영역 CSS*/	
+main section:nth-child(6){margin-top: 200px;}
+}
